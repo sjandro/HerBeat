@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:background="#ffffff"
+        card_view:cardElevation="1dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:transitionName="@string/transition_name_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/startIcon"
+                android:src="@mipmap/ic_stars_black_24dp"
+                android:layout_centerVertical="true"
+                android:transitionName="@string/transition_name_start"/>
+
+            <TextView
+                android:id="@+id/startTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Here"
+                android:layout_toRightOf="@id/startIcon"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:textSize="24dp"
+                android:transitionName="@string/transition_name_communication"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

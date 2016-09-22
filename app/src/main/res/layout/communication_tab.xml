@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/card"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        card_view:cardElevation="1dp"
+        android:transitionName="@string/transition_name_layout">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/startIcon"
+                        android:layout_marginLeft="16dp"
+                        android:src="@mipmap/ic_people_black_24dp"
+                        android:layout_centerVertical="true"
+                        android:transitionName="@string/transition_name_start"/>
+
+                    <TextView
+                        android:id="@+id/startTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:text="Communication"
+                        android:layout_margin="16dp"
+                        android:layout_toRightOf="@id/startIcon"
+                        android:textColor="#000000"
+                        android:transitionName="@string/transition_name_communication"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description goes here."
+                    android:textColor="#9f9f9f"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#eeeeee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#000"
+                    android:layout_margin="16dp"
+                    android:text="Healthcare Appointments"/>
+
+
+                <CalendarView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9f9f9f"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#eeeeee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#000"
+                    android:layout_margin="16dp"
+                    android:text="Social Networks"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Click to go to our Facebook page!"
+                        android:textColor="#1919ff"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#eeeeee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#000"
+                    android:layout_margin="16dp"
+                    android:text="Credible Web Links"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description goes here."
+                    android:textColor="#9f9f9f"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/link2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Link to Credible Website!"
+                        android:textColor="#1919ff"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#eeeeee" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

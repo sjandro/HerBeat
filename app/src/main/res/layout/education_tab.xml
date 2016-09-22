@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/card"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        card_view:cardElevation="1dp"
+        android:transitionName="@string/transition_name_layout">
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/rv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/startIcon"
+                        android:layout_marginLeft="16dp"
+                        android:src="@mipmap/ic_school_black_24dp"
+                        android:layout_centerVertical="true"
+                        android:transitionName="@string/transition_name_start"/>
+
+                    <TextView
+                        android:id="@+id/startTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:text="Education"
+                        android:layout_margin="16dp"
+                        android:layout_toRightOf="@id/startIcon"
+                        android:textColor="#000000"
+                        android:transitionName="@string/transition_name_communication"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description goes here."
+                    android:textColor="#9f9f9f"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#eeeeee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#000"
+                    android:layout_margin="16dp"
+                    android:text="Physical Activity"/>
+
+
+                <!--<com.google.android.youtube.player.YouTubePlayerView-->
+                    <!--android:id="@+id/youtube_view"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="8dp"/>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+                    android:textColor="#9f9f9f"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#eeeeee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#000"
+                    android:layout_margin="16dp"
+                    android:text="Nutrition Video"/>
+
+                <com.google.android.youtube.player.YouTubePlayerView
+                    android:id="@+id/youtube_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#eeeeee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#000"
+                    android:layout_margin="16dp"
+                    android:text="Stresss Management"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+                    android:textColor="#9f9f9f"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#eeeeee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#000"
+                    android:layout_margin="16dp"
+                    android:text="Medication"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+                    android:textColor="#9f9f9f"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#eeeeee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#000"
+                    android:layout_margin="16dp"
+                    android:text="Behavior Change Principles"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+                    android:textColor="#9f9f9f"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
